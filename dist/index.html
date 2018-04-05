@@ -24,6 +24,26 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <!-- Include Firebase components -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+        
+        <!-- Add Firebase to our web app -->
+        <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyDjX3U2md9LjbZO_90SyrjyjM6X6bFUIPE",
+        authDomain: "i-talk-platform.firebaseapp.com",
+        databaseURL: "https://i-talk-platform.firebaseio.com",
+        projectId: "i-talk-platform",
+        storageBucket: "",
+        messagingSenderId: "722544949122"
+        };
+        firebase.initializeApp(config);
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
