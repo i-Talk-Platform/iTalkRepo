@@ -13,8 +13,17 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <style>
+            div.absolute {
+                background-color: Gray;
+                position: relative;
+                margin: auto;
+            }
+        </style>
+
     </head>
-    <body>
+    <body style="background-color:LightGray;">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -53,8 +62,20 @@
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
         <!-- Add your site or application content here -->
-        <p style="font-size:50px;">iTalkers! This is HTML5 Boilerplate.</p>
-        <p style="color: blue">iTalk</p>
+
+        <div class="main-div">
+            <div class="absolute">
+                <div class="main-heading">
+                    <h1 style="font-size:60px;">
+                        <b>iTalk</b>
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+
+
+
         
     </body>
 </html>
