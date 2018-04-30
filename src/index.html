@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>iTalk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,14 +18,32 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        
+        <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <!-- Include Firebase components -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+        
+        <!-- Add Firebase to our web app -->
+        <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyDjX3U2md9LjbZO_90SyrjyjM6X6bFUIPE",
+        authDomain: "i-talk-platform.firebaseapp.com",
+        databaseURL: "https://i-talk-platform.firebaseio.com",
+        projectId: "i-talk-platform",
+        storageBucket: "",
+        messagingSenderId: "722544949122"
+        };
+        firebase.initializeApp(config);
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
@@ -33,5 +51,10 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <!-- Add your site or application content here -->
+        <p style="font-size:50px;">iTalkers! This is HTML5 Boilerplate.</p>
+        <p style="color: blue">We are going to use this template to build our application.</p>
+        
     </body>
 </html>

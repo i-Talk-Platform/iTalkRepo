@@ -1,3 +1,5 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -23,6 +25,11 @@ html {
  *
  * Customize the background color to match your design.
  */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
 ::selection {
     background: #b3d4fc;
@@ -197,6 +204,7 @@ textarea {
 }
 
 @media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
@@ -214,6 +222,7 @@ textarea {
     *:after {
         background: transparent !important;
         color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
