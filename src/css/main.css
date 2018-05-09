@@ -244,6 +244,28 @@ div {
  */
 .mySlides {display:none}
 
+/*
+   Authentication :Link custom style
+ */
+/* unvisited link */
+aa:link {
+    color: blue;
+}
+
+/* visited link */
+aa:visited {
+    color: lightgreen;
+}
+
+/* mouse over link */
+aa:hover {
+    color: green;
+}
+
+/* selected link */
+aa:active {
+    color: darkgreen;
+}
 
 
 
