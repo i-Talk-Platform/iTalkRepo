@@ -94,7 +94,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles: Put your CSS code within this block!
    ========================================================================== */
 
 * {
@@ -112,6 +112,14 @@ body {
     background-image: url("images/green2.png");
     text-align: center;
     padding: 20px;
+}
+
+/*
+    Text shadow effect
+ */
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 /*
