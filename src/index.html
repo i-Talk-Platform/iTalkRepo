@@ -63,19 +63,53 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="main-div">
-            <div class="absolute">
-                <div class="main-heading">
-                    <h1 style="font-size:60px;">
-                        <b>iTalk</b>
-                    </h1>
-                </div>
+        <!-- The header bar -->
+        <div class="header">
+            <h1>Welcome to the iTalk Platform</h1>
+        </div>
+
+        <!-- The navigation bar -->
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">Quick Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a href="#about">About</a></li>
+        </ul>
+
+        <!-- The slide show and login ui -->
+        <div class="row">
+            <div class="column">
+                <h2>Discuss to Distress</h2>
+                <p>Put a slide show here</p>
+            </div>
+            <div class="column">
+                <!-- Login UI -->
+                <h2>Sign in</h2>
+                <!-- Login Form -->
+                <form action="/action_page.php">
+                    <label for="uname">Username</label>
+                    <input type="text" id="uname" name="username" placeholder="Your username..">
+
+                    <label for="pword">Password</label>
+                    <input type="text" id="pword" name="password" placeholder="Your password..">
+                    <!--
+                    <label for="gender">Country</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    -->
+                    <input type="submit" value="Submit">
+                </form>
 
             </div>
         </div>
 
+        <!-- The footer -->
+        <div class="footer">
+            <p>At iTalk, we discuss to distress</p>
+        </div>
 
 
-        
     </body>
 </html>
